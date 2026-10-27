@@ -52,6 +52,8 @@ required.
 
 ### Simplified Block Diagram
 
+<img width="6650" height="3240" alt="8086 Microprocessor Architecture-2026-10-27-111840" src="https://github.com/user-attachments/assets/149f9f87-6b17-4921-b4e6-c9f4ef4e2ae3" />
+
 
 ### Working Principle
 
@@ -132,7 +134,21 @@ Write an 8086 assembly language program to exchange the contents of two
 5.  Stop the program.
 
 ### Assembly Program
+```asm
+MOV AX, 1234H
+MOV [2000H], AX
 
+MOV AX, 5678H
+MOV [2002H], AX
+
+MOV AX, [2000H]
+MOV BX, [2002H]
+
+MOV [2000H], BX
+MOV [2002H], AX
+
+HLT
+```
  
 
 ### Expected Result
@@ -161,7 +177,11 @@ Write an 8086 assembly language program to exchange the contents of two
 ## Screenshot of the results 
 
 1.b 
+<img width="158" height="77" alt="image" src="https://github.com/user-attachments/assets/d761659f-9d6c-4aef-aa06-eb22db12ebf2" />
+
 1.c
+<img width="166" height="76" alt="image" src="https://github.com/user-attachments/assets/3c1e5cf0-8bb1-4a95-9488-c03e8e253942" />
+
 
 ## Result
 
