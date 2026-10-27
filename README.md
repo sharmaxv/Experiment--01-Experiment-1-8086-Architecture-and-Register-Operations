@@ -52,39 +52,6 @@ required.
 
 ### Simplified Block Diagram
 
-``` text
-                 +-----------------------------------+
-                 |          8086 MICROPROCESSOR     |
-                 |                                   |
-Memory / I/O <-->+-----------------------------------+<--> System Bus
-                 |       Bus Interface Unit (BIU)    |
-                 |  +-----------------------------+  |
-                 |  | Segment Registers            |  |
-                 |  | CS, DS, SS, ES               |  |
-                 |  +-----------------------------+  |
-                 |  | Instruction Pointer (IP)     |  |
-                 |  +-----------------------------+  |
-                 |  | 6-byte Instruction Queue     |  |
-                 |  +-----------------------------+  |
-                 |  | Address Generation / Bus     |  |
-                 |  | Control                      |  |
-                 |  +---------------+-------------+  |
-                 |                  |                |
-                 |       Instruction/Data Interface  |
-                 |                  |                |
-                 |       Execution Unit (EU)         |
-                 |  +-----------------------------+  |
-                 |  | Instruction Decoder &       |  |
-                 |  | Control Circuitry           |  |
-                 |  +-----------------------------+  |
-                 |  | ALU                         |  |
-                 |  +-----------------------------+  |
-                 |  | AX, BX, CX, DX               |  |
-                 |  | SP, BP, SI, DI               |  |
-                 |  | Flag Register                |  |
-                 |  +-----------------------------+  |
-                 +-----------------------------------+
-```
 
 ### Working Principle
 
@@ -190,9 +157,11 @@ Write an 8086 assembly language program to exchange the contents of two
 6.  Inspect the registers and memory variables.
 7.  Record the observed results and compare them with the expected
     results.
+    
 ## Screenshot of the results 
 
-
+1.b 
+1.c
 
 ## Result
 
